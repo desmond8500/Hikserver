@@ -18,8 +18,6 @@ class Dossier extends Component
 
     public function getImages($folder){
 
-        // $this->images = $folder;
-        // $this->images = Storage::files('public/cctv/point_e');
         $this->images = Storage::disk('public')->files($folder);
     }
 
