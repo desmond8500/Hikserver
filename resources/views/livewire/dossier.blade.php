@@ -1,6 +1,6 @@
 <div class="mt-4">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 mb-2">
             <ul class="list-group">
                 @foreach ($folders as $folder)
                     @php
@@ -32,8 +32,5 @@
                 </div>
             @endif
         </div>
-
     </div>
-
-
 </div>
