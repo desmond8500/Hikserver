@@ -10,7 +10,7 @@
     @livewireStyles
 </head>
 <body>
-    @include('index\nav')
+    @include('index/nav')
     <div class="container">
         @livewire('dossier')
 
