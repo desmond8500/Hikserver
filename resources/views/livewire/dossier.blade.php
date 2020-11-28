@@ -13,6 +13,7 @@
         </div>
 
         <div class="col-md-9">
+        <h3>{{ basename($page_name) }}</h3>
             @if ($images)
                 <div class="card-columns">
                     @foreach ($images as $item)

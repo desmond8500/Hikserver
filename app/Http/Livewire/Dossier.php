@@ -10,6 +10,7 @@ class Dossier extends Component
     public $folders= "hello";
     public $images = 0;
     public $folder = null;
+    public $page_name = "Vidéo surveillance";
 
     public function mount(){
         $this->folders = Storage::disk('public')->Directories('cctv/point_e');
@@ -17,7 +18,8 @@ class Dossier extends Component
     }
 
     public function getImages($folder){
-
+        $name = explode('-', basename($folder));
+        $this->page_name = $name[0];
         $this->images = Storage::disk('public')->files($folder);
     }
 
