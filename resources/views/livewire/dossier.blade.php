@@ -13,6 +13,9 @@
                     <button class="list-group-item list-group-item-action {{ $name[0]==$page_name ? 'active' : '' }}" wire:click="getImages('{{ $folder }}')">{{ $name[0] }}</button>
                 @endforeach
             </ul>
+
+            {{-- <input type="date" class="form-control" wire:model="date">
+            {{ $date }} --}}
         </div>
 
         <div class="col-md-9">
@@ -42,6 +45,15 @@
                     </div>
                     @endforeach
                 </div>
+            @else
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center mt-4">Veuillez choisir une date pour afficher les images</h2>
+
+                    </div>
+                </div>
+
+
             @endif
         </div>
     </div>

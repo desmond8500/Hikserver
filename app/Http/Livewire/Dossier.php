@@ -11,6 +11,7 @@ class Dossier extends Component
     public $images = 0;
     public $folder = null;
     public $page_name = "Vidéo surveillance";
+    public $date;
 
     public function mount(){
         $this->folders = Storage::disk('public')->Directories('cctv/point_e');
