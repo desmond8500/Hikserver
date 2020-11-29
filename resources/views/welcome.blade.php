@@ -9,9 +9,9 @@
     <title>HIK Web Server</title>
     @livewireStyles
 </head>
-<body>
+<body style="background: #ebebeb">
     @include('index/nav')
-    <div class="container">
+    <div class="container-fluid">
         @livewire('dossier')
     </div>
 

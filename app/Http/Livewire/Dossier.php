@@ -21,7 +21,11 @@ class Dossier extends Component
         $name = explode('-', basename($folder));
         $this->page_name = $name[0];
         $this->images = Storage::disk('public')->files($folder);
+
+        // $test = Paginator::make($this->images, count($this->images),3);
     }
+
+
 
     public function render()
     {
