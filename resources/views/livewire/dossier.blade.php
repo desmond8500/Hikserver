@@ -33,7 +33,7 @@
                                     {{ $file[0] }} : {{ $file[1] }}
                                 </span>
                                 <span class="float-right mr-3">
-                                    {{ $file[0] }} : {{ $file[1] }}
+                                    {{ $page_name }}
                                 </span>
 
                             </div>
